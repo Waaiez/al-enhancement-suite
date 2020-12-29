@@ -16,57 +16,69 @@ const addGreenMangaCSS = `
 	color: rgb(0,128,0);
 }
 
-.activity-feed .activity-manga_list > .wrap > .list > .cover[href^='/manga/'] {
-	border-bottom-style: solid;
-	border-bottom-color: rgb(0,128,0);
-	border-bottom-width: 3px;
+.activity-feed .activity-manga_list > .wrap > .list > .cover[href^='/manga/'] > .image {
+	border-bottom-style: solid !important;
+	border-bottom-color: rgb(0,128,0) !important;
+	border-bottom-width: 3px !important;
 }
 
 // Trending Anime & Manga - Home
-div.home:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > .media-preview > .media-preview-card > .cover[href^='/manga/'] {
-    border-bottom-style: solid;
-	border-bottom-color: rgb(0,128,0);
-	border-bottom-width: 3px;
+div.home:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > .media-preview > .media-preview-card > .cover[href^='/manga/'] > .image {
+    border-bottom-style: solid !important;
+	border-bottom-color: rgb(0,128,0) !important;
+	border-bottom-width: 3px !important;
 }
-div.home:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > .media-preview > .media-preview-card > .content {
+div.home:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > .media-preview > .media-preview-card > .cover[href^='/manga/'] + .content {
 	color: rgb(0,128,0);
 }
 
 // Newly Added Manga - Home
-div.home:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div:nth-child(3) > div:nth-child(2) > .media-preview-card > .cover[href^='/manga/'] {
-    border-bottom-style: solid;
-	border-bottom-color: rgb(0,128,0);
-	border-bottom-width: 3px;
+div.home:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div:nth-child(3) > div:nth-child(2) > .media-preview-card > .cover[href^='/manga/'] > .image {
+    border-bottom-style: solid !important;
+	border-bottom-color: rgb(0,128,0) !important;
+	border-bottom-width: 3px !important;
 }
 
-div.home:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div:nth-child(3) > div:nth-child(2) > .media-preview-card > .content {
+div.home:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div:nth-child(3) > div:nth-child(2) > .media-preview-card > .cover[href^='/manga/'] + .content {
 	color: rgb(0,128,0);
 }
 
-//
-
-.user
-	.review-card:hover
-	.banner[data-src*='/media/anime/']
-	+ .content
-	> .header {
-	color: rgb(61, 180, 242);
+// Relations
+.relations > div > .media-preview-card > .cover[href^='/manga/'] > .image {
+    border-bottom-style: solid !important;
+	border-bottom-color: rgb(0,128,0) !important;
+	border-bottom-width: 3px !important;
 }
+
+.relations > div > .media-preview-card > .cover[href^='/manga/'] > .image-text {
+    color: rgb(0,128,0);
+}
+
+.relations > div > .media-preview-card > .cover[href^='/manga/'] + .content {
+	color: rgb(0,128,0);
+}
+
+// Character Page
+.roles > div > .grid-wrap > .role-card >  .cover[href^='/manga/'] > .image {
+	border-bottom-style: solid !important;
+	border-bottom-color: rgb(0,128,0) !important;
+	border-bottom-width: 3px !important;
+}
+.roles > div > .grid-wrap > .role-card >  .cover[href^='/manga/'] + .titles > .title {
+	color: rgb(0,128,0);
+}
+
 
 .media .relations .cover[href^='/manga/'] + div div {
 	color: rgba(var(--color-green));
 }
-.media .relations .cover[href^='/anime/'] + div div {
-	color: rgba(var(--color-blue));
-}
+
 .media .relations .cover[href^='/manga/'] {
 	border-bottom-style: solid;
 	border-bottom-color: rgba(var(--color-green));
 	border-bottom-width: 2px;
 }
-.character-wrap .role-card:hover .title[href^='/anime/'] {
-	color: rgb(var(--color-blue)) !important;
-}
+
 .character-wrap .role-card .title[href^='/manga/'],
 .character-wrap .role-card:hover .title[href^='/manga/'],
 .media-roles .media .content:hover[href^='/manga/'] .name {
@@ -81,11 +93,7 @@ div.home:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div:nth-child(3) >
 	border-color: rgba(var(--color-green));
 	border-width: 2px;
 }
-.media .relations .cover[href^='/anime/'] {
-	border-bottom-style: solid;
-	border-bottom-color: rgba(var(--color-blue));
-	border-bottom-width: 2px;
-}
+
 .media .relations .cover div.image-text {
 	margin-bottom: 2px !important;
 	border-radius: 0px !important;
