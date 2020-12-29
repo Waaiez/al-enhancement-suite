@@ -1,0 +1,25 @@
+{
+	"name": "al-enhancement-suite",
+	"version": "1.0.0",
+	"description": "Extension that adds additonal features to Anilist",
+	"scripts": {
+		"delete": "rm -r build/icons/ build/options/",
+		"copy": "cp -R src/options/ build/ && cp -R src/icons build/",
+		"build": "webpack && npm run-script delete && npm run-script copy"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Waaiez/al-enhancement-suite.git"
+	},
+	"author": "Waaiez Kinnear",
+	"license": "MIT",
+	"devDependencies": {
+		"eslint": "^7.16.0",
+		"webpack": "^5.11.0",
+		"webpack-cli": "^4.2.0"
+	},
+	"bugs": {
+		"url": "https://github.com/Waaiez/al-enhancement-suite/issues"
+	},
+	"homepage": "https://github.com/Waaiez/al-enhancement-suite#readme"
+}

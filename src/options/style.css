@@ -1,0 +1,71 @@
+.collapsible {
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: 1px solid;
+	font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+	background-color: #999;
+}
+
+.collapsible:after {
+	content: '\002B';
+	color: black;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+}
+
+.active:after {
+	content: '\2212';
+}
+
+.content {
+	padding: 0 18px;
+	overflow: hidden;
+	transition: height 0.3s ease-out;
+	background-color: white;
+	border-left: 1px solid;
+	border-right: 1px solid;
+	border-bottom: 1px solid;
+	display: none;
+}
+
+.content.show {
+	display: block !important;
+}
+
+.btn {
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: center;
+	outline: 2px solid;
+	font-size: 18px;
+	position: fixed;
+	bottom: 0;
+}
+
+.btn:hover {
+	background-color: #999;
+}
+
+.setting {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+body {
+	width: 30em;
+	overflow-y: scroll;
+}
